@@ -11,16 +11,7 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
-      case TargetPlatform.macOS:
-        return macos;
-      case TargetPlatform.windows:
-        return windows;
-      case TargetPlatform.linux:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for linux',
-        );
+      
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -32,44 +23,13 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyC266doutiKaeOc-n3hqG40evfMVNICCog',
     appId: '1:33183601635:android:f295037a101e48486706d6',
     messagingSenderId: '33183601635',
-    projectId: 'quote-app-abdo',
-    storageBucket: 'quote-app-abdo.appspot.com',
+    projectId: 'quote-app',
+    storageBucket: 'quote-app.appspot.com',
   );
 
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey:
-        'your-ios-api-key', // Replace with actual iOS API key from Firebase Console
-    appId: '1:33183601635:ios:1fa325514eff02df6706d6',
-    messagingSenderId: '33183601635',
-    projectId: 'quote-app-abdo',
-    storageBucket: 'quote-app-abdo.appspot.com',
-    iosBundleId: 'com.example.quoteApp',
-  );
+  
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'your-macos-api-key', // Replace with actual macOS API key
-    appId: '1:33183601635:ios:1fa325514eff02df6706d6',
-    messagingSenderId: '33183601635',
-    projectId: 'quote-app-abdo',
-    storageBucket: 'quote-app-abdo.appspot.com',
-    iosBundleId: 'com.example.quoteApp',
-  );
 
- static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC266doutiKaeOc-n3hqG40evfMVNICCog',
-    appId: '1:33183601635:web:c286ed1e4de858946706d6',
-    messagingSenderId: '33183601635',
-    projectId: 'quote-app-abdo',
-    authDomain: 'quote-app-abdo.firebaseapp.com',
-    storageBucket: 'quote-app-abdo.appspot.com',
-  );
 
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC266doutiKaeOc-n3hqG40evfMVNICCog',
-    appId: '1:33183601635:web:68b3f8117b4cb5046706d6',
-    messagingSenderId: '33183601635',
-    projectId: 'quote-app-abdo',
-    authDomain: 'quote-app-abdo.firebaseapp.com',
-    storageBucket: 'quote-app-abdo.appspot.com',
-  );
+ 
 }
